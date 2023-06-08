@@ -1,0 +1,52 @@
+.main-nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    &__content-img-search {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        color: #A2A2A2;
+        &-content {
+            position: relative;
+            &--icon {
+                position: absolute;
+                right: 20px;
+                bottom: 50%;
+                transform: translateY(50%);
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+            input {
+                width: 450px;
+                background-color: #F5F5F5;
+                padding: 10px 35px;
+                border-radius: 15px;
+                @media (max-width: 991px) {
+                    width: 300px;
+                }
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        button {
+            width: 150px;
+        }
+        &--icon {
+            display: none;
+            @media (max-width: 767px) {
+                display: block;
+                font-size: 22px;
+            }
+        }
+    }
+}
